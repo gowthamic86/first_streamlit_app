@@ -57,3 +57,5 @@ def insert_row_snowflake(new_fruit):
     with my_cnx.xursor() as my_cur:
          my_cnx.execute("insert into fruit_load_list values('from streamlit')")
          return "Thanks for adding" +new_fruit
+
+except URLError as e:
