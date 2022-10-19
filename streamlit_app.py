@@ -36,8 +36,8 @@ try:
       fruitvice_normalized  = pandas.json_normalize(fruityvice_response.json())
       streamlit.dataframe(fruitvice_normalized)
       
- except URLError as e:
-     streamlit.error()
+except URLError as e:
+    streamlit.error()
 
 #Allow the end user to add a fruit to yje list 
 def insert_row_snowflake(new_fruit):
